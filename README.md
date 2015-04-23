@@ -5,6 +5,8 @@ Hubot-script unittest helper
 
 ## Usage
 
+Write your test-cases like
+
 ```coffee
 tbot = require 'tbot'
 
@@ -26,4 +28,25 @@ describe 'hubot', ->
       tbot.send 'hubot hello', (res)->
         assert.equal res, "world"
 ```
+
+,and run with `mocha`
+
+```
+$ mocha
+
+
+  hubot
+    hello
+      ✓ should send world
+
+
+  1 passing (89ms)
+  ```
+
+
+  ## Install
+
+  ```
+  $ npm install tbot --save-dev
+  ```
 

@@ -1,6 +1,6 @@
 {
   "name": "tbot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "helper for testing hubot-scripts",
   "main": "index.js",
   "scripts": {
