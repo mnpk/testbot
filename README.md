@@ -2,6 +2,8 @@
 
 Hubot-script unittest helper
 
+[![npm](https://img.shields.io/npm/v/tbot.svg?style=flat-square)](https://www.npmjs.com/package/tbot)
+
 
 ## Usage
 
