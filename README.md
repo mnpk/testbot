@@ -29,9 +29,9 @@ describe 'hubot', ->
         assert.equal res, "world"
 ```
 
-,and run with `mocha`
+and run with `mocha`
 
-```
+```shell
 $ mocha
 
 
@@ -41,12 +41,12 @@ $ mocha
 
 
   1 passing (89ms)
-  ```
+```
 
 
-  ## Install
+## Install
 
-  ```
-  $ npm install tbot --save-dev
-  ```
+```shell
+$ npm install tbot --save-dev
+```
 
