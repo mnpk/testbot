@@ -1,0 +1,33 @@
+{
+  "name": "tbot",
+  "version": "0.1.0",
+  "description": "helper for testing hubot-scripts",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mnpk/tbot.git"
+  },
+  "keywords": [
+    "hubot",
+    "unittest",
+    "test",
+    "mocha",
+    "coffeescript",
+    "bot"
+  ],
+  "author": "mnpk <mnncat@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnpk/tbot/issues"
+  },
+  "homepage": "https://github.com/mnpk/tbot",
+  "dependencies": {
+    "coffee-script": "^1.9.2",
+    "hubot": "~2.7.2",
+    "hubot-mock-adapter": "^1.0.0"
+  },
+  "devDependencies": {
+  }
+}
