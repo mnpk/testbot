@@ -1,6 +1,9 @@
 # TBOT
 
-Hubot-script unittest helper
+Writing your hubot script? Make unit tests with TBOT.
+
+It's easy.
+
 
 [![npm](https://img.shields.io/npm/v/tbot.svg?style=flat-square)](https://www.npmjs.com/package/tbot)
 
