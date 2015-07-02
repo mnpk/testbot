@@ -1,23 +1,25 @@
 TextMessage = require("hubot/src/message").TextMessage
-assert = require 'assert'
+path = require 'path'
 
 class Testbot
-  constructor: (done, name = 'hubot', @username = 'mocha', @userroot = '#mocha') ->
+  constructor: () ->
     Robot = require("hubot/src/robot")
-    @user = null
-    @robot = new Robot null, 'mock-adapter', yes, name
+    @robot = new Robot null, 'mock-adapter', yes, 'hubot'
     @adapter = @robot.adapter
     @user = @robot.brain.userForId '1', {
-      name: @username,
-      root: @userroot
+      name: 'mocha',
+      root: '#mocha'
     }
+
+  load: (src_path, files, done)->
     @robot.adapter.on 'connected', ->
       process.env.HUBOT_AUTH_ADMIN = "1"
+      for f in files
+        @robot.loadFile path.resolve(src_path), f
       do done
     do @robot.run
 
-  load: (file)->
-    @robot.loadFile file
+  run: (done)->
 
   send: (msg, cb)->
     @adapter.receive new TextMessage @user, msg

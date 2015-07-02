@@ -15,25 +15,27 @@ It's easy.
 Write your test-cases like
 
 ```coffee
-testbot = require 'testbot'
+Testbot = require 'testbot'
+assert = require 'assert'
 
 describe 'hubot', ->
-  testbot = null
+  bot = null
 
-  # create new testbot before each test
+  # create new bot before each test
   beforeEach (done)->
-    testbot = new testbot done
-    testbot.load './src/hello.coffee'
+    bot = new Testbot
+    bot.load './src', ['hello.coffee'], done
 
-  # clear testbot after each test
+  # clear bot after each test
   afterEach ->
-    do testbot.clear
+    do bot.clear
 
   # write your test cases
   describe 'hello', ->
-    it 'should send world', ()->
-      testbot.send 'hubot hello', (res)->
+    it 'should send world', (done)->
+      bot.send 'hubot hello', (res)->
         assert.equal res, "world"
+        do done
 ```
 
 and run with `mocha`
