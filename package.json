@@ -1,13 +1,13 @@
 {
-  "name": "tbot",
-  "version": "0.1.1",
+  "name": "testbot",
+  "version": "1.0.0",
   "description": "helper for testing hubot-scripts",
   "main": "index.js",
   "scripts": {
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mnpk/tbot.git"
+    "url": "git@github.com:mnpk/testbot.git"
   },
   "keywords": [
     "hubot",
@@ -20,9 +20,9 @@
   "author": "mnpk <mnncat@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mnpk/tbot/issues"
+    "url": "https://github.com/mnpk/testbot/issues"
   },
-  "homepage": "https://github.com/mnpk/tbot",
+  "homepage": "https://github.com/mnpk/testbot",
   "dependencies": {
     "coffee-script": "^1.9.2",
     "hubot": "~2.7.2",

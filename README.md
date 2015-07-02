@@ -8,24 +8,24 @@ Hubot-script unittest helper
 Write your test-cases like
 
 ```coffee
-tbot = require 'tbot'
+testbot = require 'testbot'
 
 describe 'hubot', ->
-  tbot = null
+  testbot = null
 
-  # create new tbot before each test
+  # create new testbot before each test
   beforeEach (done)->
-    tbot = new tbot done
-    tbot.load './src/hello.coffee'
+    testbot = new testbot done
+    testbot.load './src/hello.coffee'
 
-  # clear tbot after each test
+  # clear testbot after each test
   afterEach ->
-    do tbot.clear
+    do testbot.clear
 
   # write your test cases
   describe 'hello', ->
     it 'should send world', ()->
-      tbot.send 'hubot hello', (res)->
+      testbot.send 'hubot hello', (res)->
         assert.equal res, "world"
 ```
 
@@ -47,6 +47,6 @@ $ mocha
 ## Install
 
 ```shell
-$ npm install tbot --save-dev
+$ npm install testbot --save-dev
 ```
 
