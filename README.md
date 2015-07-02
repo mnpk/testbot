@@ -6,7 +6,7 @@ Make unit tests with `TESTBOT`.
 
 It's easy.
 
-[![npm](https://img.shields.io/npm/v/tbot.svg?style=flat-square)](https://www.npmjs.com/package/tbot)
+[![npm](https://img.shields.io/npm/v/testbot.svg?style=flat-square)](https://www.npmjs.com/package/testbot)
 
 ![hubot](http://i.imgur.com/KSlQyEg.png)
 
